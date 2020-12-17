@@ -1,0 +1,45 @@
+##fileformat=VCFv4.1
+##FILTER=<ID=PASS,Description="All filters passed">
+##source=Sniffles
+##fileDate=20200901:16:09 AMef_minus
+##contig=<ID=1,length=30427671>
+##contig=<ID=2,length=19698289>
+##contig=<ID=3,length=23459830>
+##contig=<ID=4,length=18585056>
+##contig=<ID=5,length=26975502>
+##contig=<ID=mitochondria,length=366924>
+##contig=<ID=chloroplast,length=154478>
+##ALT=<ID=DEL,Description="Deletion">
+##ALT=<ID=DUP,Description="Duplication">
+##ALT=<ID=INV,Description="Inversion">
+##ALT=<ID=INVDUP,Description="InvertedDUP with unknown boundaries">
+##ALT=<ID=TRA,Description="Translocation">
+##ALT=<ID=INS,Description="Insertion">
+##FILTER=<ID=UNRESOLVED,Description="An insertion that is longer than the read and thus we cannot predict the full size.">
+##INFO=<ID=CHR2,Number=1,Type=String,Description="Chromosome for END coordinate in case of a translocation">
+##INFO=<ID=END,Number=1,Type=Integer,Description="End position of the structural variant">
+##INFO=<ID=MAPQ,Number=1,Type=Integer,Description="Median mapping quality of paired_ends">
+##INFO=<ID=RE,Number=1,Type=Integer,Description="read support">
+##INFO=<ID=IMPRECISE,Number=0,Type=Flag,Description="Imprecise structural variation">
+##INFO=<ID=PRECISE,Number=0,Type=Flag,Description="Precise structural variation">
+##INFO=<ID=SVLEN,Number=1,Type=Integer,Description="Length of the SV">
+##INFO=<ID=SVMETHOD,Number=1,Type=String,Description="Type of approach used to detect SV">
+##INFO=<ID=SVTYPE,Number=1,Type=String,Description="Type of structural variant">
+##INFO=<ID=SEQ,Number=1,Type=String,Description="Extracted sequence from the best representative read.">
+##INFO=<ID=STRANDS2,Number=4,Type=Integer,Description="alt reads first + ,alt reads first _,alt reads second + ,alt reads second _.">
+##INFO=<ID=REF_strand,Number=.,Type=Integer,Description="plus strand ref, minus strand ref.">
+##INFO=<ID=Strandbias_pval,Number=A,Type=Float,Description="P_value for fisher exact test for strand bias.">
+##INFO=<ID=STD_quant_start,Number=A,Type=Float,Description="STD of the start breakpoints across the reads.">
+##INFO=<ID=STD_quant_stop,Number=A,Type=Float,Description="STD of the stop breakpoints across the reads.">
+##INFO=<ID=Kurtosis_quant_start,Number=A,Type=Float,Description="Kurtosis value of the start breakpoints across the reads.">
+##INFO=<ID=Kurtosis_quant_stop,Number=A,Type=Float,Description="Kurtosis value of the stop breakpoints across the reads.">
+##INFO=<ID=SUPTYPE,Number=.,Type=String,Description="Type by which the variant is supported.(SR,AL,NR)">
+##INFO=<ID=STRANDS,Number=A,Type=String,Description="Strand orientation of the adjacency in BEDPE format (DEL:+_, DUP:_+, INV:++/__)">
+##INFO=<ID=AF,Number=A,Type=Float,Description="Allele Frequency.">
+##INFO=<ID=ZMW,Number=A,Type=Integer,Description="Number of ZMWs (Pacbio) supporting SV.">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=DR,Number=1,Type=Integer,Description="# high_quality reference reads">
+##FORMAT=<ID=DV,Number=1,Type=Integer,Description="# high_quality variant reads">
+##bcftools_viewVersion=1.11-13-g78003de+htslib-1.11-18-g7f8211c
+##bcftools_viewCommand=view -h ../cnv/sniffles.vcf; Date=Thu Nov 12 12:33:04 2020
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	../mmurach/ERR2173373_sorted_MD.sorted.bam

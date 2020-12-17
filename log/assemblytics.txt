@@ -1,0 +1,21 @@
+Discarding all alignments below the unique anchor length of 10000 bp
+Use --keep-small-uniques to keep all the fully unique alignments even below this length
+Use --unique-length X to set the unique anchor length requirement. Default is 10000, such that each alignment must have at least 10000 bp from the query that are not included in any other alignments.
+header:
+/mnt/c/Users/maria/Documents/MEGAsync/analiza_magisterka/bioinfogeno/mummer_contig/../mmurach/TAIR10_chr_all.fas /mnt/c/Users/maria/Documents/MEGAsync/analiza_magisterka/bioinfogeno/mummer_contig/GCA_900303355.1_ONTmin_IT4_genomic.fna
+NUCMER
+First read through the file: 0 seconds for 0 query-reference combinations
+Filtering alignments of 60 queries
+Progress: 10%
+Progress: 20%
+Progress: 30%
+Progress: 40%
+Progress: 50%
+Progress: 60%
+Progress: 70%
+Progress: 80%
+Progress: 90%
+Progress: 100%
+Progress: 100%
+Deciding which alignments to keep: 0 seconds for 60 queries
+Reading file and recording all the entries we decided to keep: 2 seconds for 1509670 total lines in file

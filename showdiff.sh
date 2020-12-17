@@ -1,0 +1,1 @@
+../mmurach/MUMmer3.23/show-diff ../mummer_contig/out.delta > ./cnv/GCA_900303355.showdiff.diff

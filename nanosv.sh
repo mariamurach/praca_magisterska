@@ -1,0 +1,1 @@
+NanoSV -t 11 -b ../mmurach/araTha1_genome_sample.bed ../mmurach/ERR2173373_sorted_MD.sorted.bam -o cnv/nanosv.vcf -s ../tools/sambamba

@@ -1,0 +1,65 @@
+Estimating parameter...
+	Max dist between aln events: 4
+	Max diff in window: 50
+	Min score ratio: 2
+	Avg DEL ratio: 0.0956252
+	Avg INS ratio: 0.0314665
+Start parsing... 1
+		# Processed reads: 10000
+		# Processed reads: 20000
+		# Processed reads: 30000
+		# Processed reads: 40000
+		# Processed reads: 50000
+	Switch Chr 2
+		Reassessing breakpoints
+		Continue parsing
+		# Processed reads: 60000
+		# Processed reads: 70000
+		# Processed reads: 80000
+		# Processed reads: 90000
+		# Processed reads: 100000
+	Switch Chr 3
+		Reassessing breakpoints
+		Continue parsing
+		# Processed reads: 110000
+		# Processed reads: 120000
+		# Processed reads: 130000
+		# Processed reads: 140000
+		# Processed reads: 150000
+		# Processed reads: 160000
+	Switch Chr 4
+		Reassessing breakpoints
+		Continue parsing
+		# Processed reads: 170000
+		# Processed reads: 180000
+		# Processed reads: 190000
+	Switch Chr 5
+		Reassessing breakpoints
+		Continue parsing
+		# Processed reads: 200000
+		# Processed reads: 210000
+		# Processed reads: 220000
+		# Processed reads: 230000
+		# Processed reads: 240000
+		# Processed reads: 250000
+	Switch Chr mitochondria
+		Reassessing breakpoints
+		Continue parsing
+	Switch Chr chloroplast
+		Reassessing breakpoints
+		Continue parsing
+		# Processed reads: 260000
+		# Processed reads: 270000
+		# Processed reads: 280000
+		# Processed reads: 290000
+	Finalizing  ..
+Start genotype calling:
+		Read in SV: 5000
+	Reopening Bam file for parsing coverage 
+		Switch Chr 2
+		Switch Chr 3
+		Switch Chr 4
+		Switch Chr 5
+		Switch Chr mitochondria
+		Switch Chr chloroplast
+	Finalizing  ..

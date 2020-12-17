@@ -1,0 +1,32 @@
+{
+    "id": "2820110A",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1605120811359.0,
+    "source_on_save": false,
+    "relative_order": 3,
+    "properties": {
+        "expression": "lumpy",
+        "caption": "lumpy",
+        "totalObservations": 8,
+        "displayedObservations": 8,
+        "variables": 4,
+        "cacheKey": "C18B4DD9",
+        "object": "lumpy",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=lumpy&cache_key=C18B4DD9&max_cols=50",
+        "preview": 0
+    },
+    "folds": "",
+    "lastKnownWriteTime": 4335957814,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1605120811359,
+    "read_only": false,
+    "read_only_alternatives": []
+}
