@@ -1,4 +1,4 @@
-reference	ref_start	ref_stop	ID	size	strand	type	ref_gap_size	query_gap_size	query_coordinates	method
+#reference	ref_start	ref_stop	ID	size	strand	type	ref_gap_size	query_gap_size	query_coordinates	method
 4	1049163	1049219	Assemblytics_w_1	56	+	Deletion	56	0	OMOL01000057.1:188761-188761:+	within_alignment
 4	1113650	1113650	Assemblytics_w_2	65	+	Insertion	0	65	OMOL01000057.1:249040-249105:+	within_alignment
 3	13917678	13917678	Assemblytics_w_3	77	+	Insertion	0	77	OMOL01000047.1:34701-34778:+	within_alignment

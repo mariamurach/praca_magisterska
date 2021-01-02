@@ -4,6 +4,7 @@ lumpy<- read_csv("lumpy.csv", col_types = cols(.default = "d", CHROM = "c", SVTY
 sniffles<- read_csv("sniffles.csv", col_types = cols(.default = "d", CHROM = "c", SVTYPE = "c", ALT = "c"))
 sniffles_minimap<- read_csv("sniffles_minimap.csv", col_types = cols(.default = "d", CHROM = "c", SVTYPE = "c", ALT = "c"))
 nanosv<- read_csv("nanosv.csv", col_types = cols(.default = "d", CHROM = "c", SVTYPE = "c", ALT = "c"))
+nanosv$END <- ifelse(is.na(nanosv$END), nanosv$START + nanosv$SVLEN, nanosv$END) 
 
 lumpy$name = "lumpy"
 sniffles$name = "sniffles"
@@ -15,6 +16,8 @@ warianty$length <- ""
 warianty$length <- ifelse(abs(warianty$SVLEN) >= 500, ">=500bp", 
                     ifelse( abs(warianty$SVLEN) < 500 & abs(warianty$SVLEN) >= 50, "50-499bp", "< 50bp" ))
 warianty$length <- factor(warianty$length, levels = c("< 50bp", "50-499bp", ">=500bp" ))
+
+write_csv(warianty, "wszystkie_warianty_odczyty.csv")
 
 war <- warianty %>% count(name, sort = TRUE) %>% rename(program = name)
 war %>% ggplot(aes(x = program, y = n, fill = program)) +

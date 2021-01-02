@@ -8,18 +8,18 @@ showdiff <- read_tsv("../../cnv/showdiff.diff", skip = 3)
 
 svmu <- svmu %>% mutate(CHROM = REF_CHROM, START = REF_START, STOP = REF_END, type = SV_TYPE, SVLEN = abs(LEN)) %>% select(CHROM, START, STOP, SVLEN, type)
 svmu$program <- "svmu"
-assemblytics <- assemblytics %>% mutate(CHROM = reference, START = ref_start, STOP = ref_stop, type = type, SVLEN = abs(size)) %>% select(CHROM, START, STOP, SVLEN, type)
+assemblytics <- assemblytics %>% mutate(CHROM = `#reference`, START = ref_start, STOP = ref_stop, type = type, SVLEN = abs(size)) %>% select(CHROM, START, STOP, SVLEN, type)
 assemblytics$program <- "assemblytics" 
 showdiff <- showdiff %>% mutate(CHROM = `[SEQ]`, START = `[S1]`, STOP = `[E1]`, type = `[TYPE]`, SVLEN = abs(`[LEN 1]`)) %>% select(CHROM, START, STOP, SVLEN, type)
 showdiff$program <- "showdiff"
 
 assemblytics$wariant <- ifelse(assemblytics$type == "Insertion", "INS", 
                                            ifelse(assemblytics$type == "Deletion", "DEL", "INNY"))
-
 assemblytics$type <- factor(assemblytics$type)
 assemblytics_insertions <- assemblytics %>% filter(type == "Insertion") %>% nrow
 assemblytics_deletions <- assemblytics %>% filter(type == "Deletion") %>% nrow
 assemblytics_others <- assemblytics %>% filter(!(type == "Deletion")) %>% filter(!(type == "Insertion")) %>% nrow
+
 
 showdiff$type <- factor(showdiff$type)
 showdiff_insertions <- showdiff %>% filter(type == "BRK") %>% nrow
@@ -65,7 +65,7 @@ warianty$length <- ""
 warianty$length <- ifelse(abs(warianty$SVLEN) >= 500, ">=500bp", 
                           ifelse( abs(warianty$SVLEN) < 500 & abs(warianty$SVLEN) >= 50, "50-499bp", "< 50bp" ))
 warianty$length <- factor(warianty$length, levels = c("< 50bp", "50-499bp", ">=500bp" ))
-
+write_csv(warianty, "wszystkie_warianty_asemblacja.csv")
 warianty %>% ggplot(aes(x = program, fill = length)) + 
   geom_bar(position = "fill") + 
   labs(x = "program", y = "Ułamek wariantów") + 

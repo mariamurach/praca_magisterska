@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Session genome="tair10" hasGeneTrack="true" hasSequenceTrack="true" locus="1:15909748-15913998" version="8">
+    <Resources>
+        <Resource path="cnv/Arabidopsis.Assemblytics_structural_variants.bed"/>
+        <Resource path="cnv/nanosv.vcf"/>
+    </Resources>
+    <Panel height="619" name="DataPanel" width="1775">
+        <Track attributeKey="Gene" clazz="org.broad.igv.track.FeatureTrack" color="51,255,51" colorScale="ContinuousColorScale;0.0;256.0;255,255,255;0,0,178" fontSize="10" height="35" id="tair10_genes" name="TAIR10" visible="true"/>
+        <Track attributeKey="Arabidopsis.Assemblytics_structural_variants.bed" clazz="org.broad.igv.track.FeatureTrack" color="255,102,102" colorScale="ContinuousColorScale;0.0;14.0;255,255,255;0,0,178" fontSize="10" id="/Users/maria/OneDrive - University of Virginia/magisterka/results/cnv/Arabidopsis.Assemblytics_structural_variants.bed" name="Assemblytics" visible="true"/>
+        <Track attributeKey="nanosv.vcf" clazz="org.broad.igv.variant.VariantTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;52.0;255,255,255;0,0,178" fontSize="10" id="/Users/maria/OneDrive - University of Virginia/magisterka/results/cnv/nanosv.vcf" name="NanoSV" siteColorMode="ALLELE_FREQUENCY" squishedHeight="1" visible="true"/>
+    </Panel>
+    <Panel height="304" name="FeaturePanel" width="1775">
+        <Track attributeKey="Reference sequence" clazz="org.broad.igv.track.SequenceTrack" fontSize="10" id="Reference sequence" name="Reference sequence" visible="true"/>
+    </Panel>
+    <PanelLayout dividerFractions="0.667741935483871"/>
+    <HiddenAttributes>
+        <Attribute name="DATA FILE"/>
+        <Attribute name="DATA TYPE"/>
+        <Attribute name="NAME"/>
+    </HiddenAttributes>
+</Session>
